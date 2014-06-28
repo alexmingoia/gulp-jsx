@@ -1,5 +1,4 @@
 var expect = require('expect.js');
-var gulp = require('gulp');
 var File = require('vinyl');
 var jsx = require('..');
 
