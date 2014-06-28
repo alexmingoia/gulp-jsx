@@ -1,0 +1,33 @@
+{
+  "name": "gulp-jsx",
+  "version": "0.1.0",
+  "description": "Transpile virtual DOM JSX in gulp streams.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alexmingoia/gulp-jsx"
+  },
+  "keywords": [
+    "jsx",
+    "virtual-dom",
+    "gulp"
+  ],
+  "author": "Alex Mingoia <talk@alexmingoia.com>",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/alexmingoia/gulp-jsx/issues"
+  },
+  "homepage": "https://github.com/alexmingoia/gulp-jsx",
+  "dependencies": {
+    "through2": "^0.5.1",
+    "virtual-dom-jsx": "^0.2.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^1.20.1",
+    "vinyl": "^0.2.3"
+  }
+}
