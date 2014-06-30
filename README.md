@@ -4,7 +4,7 @@
 [![NPM version](https://badge.fury.io/js/gulp-jsx.png)](http://badge.fury.io/js/gulp-jsx)
 [![Dependency Status](https://david-dm.org/alexmingoia/gulp-jsx.png)](http://david-dm.org/alexmingoia/gulp-jsx)
 
-[virtual-dom-jsx](https://github.com/alexmingoia/virtual-dom-jsx/) for
+[jsx-transform](https://github.com/alexmingoia/jsx-transform/) for
 [Gulp](https://github.com/gulpjs/gulp/).
 
 ## Installation
