@@ -1,7 +1,7 @@
 {
   "name": "gulp-jsx",
   "version": "0.2.0",
-  "description": "Transpile virtual DOM JSX in gulp streams.",
+  "description": "Transpile JSX in gulp streams.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test --reporter spec"
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/alexmingoia/gulp-jsx",
   "dependencies": {
     "through2": "^0.5.1",
-    "virtual-dom-jsx": "^0.3.0"
+    "jsx-transform": "^0.4.0"
   },
   "devDependencies": {
     "expect.js": "^0.3.1",
