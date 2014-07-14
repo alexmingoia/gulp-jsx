@@ -2,6 +2,32 @@ var expect = require('expect.js');
 var File = require('vinyl');
 var jsx = require('..');
 
+function performTransformTest(filename, done) {
+  var stream = jsx({
+    jsx: "virtualdom.h",
+    ignoreDocblock: true
+  });
+
+  var file = new File({
+    cwd: "",
+    base: "",
+    path: filename,
+    contents: new Buffer("<div></div>", 'utf8')
+  });
+
+  stream.on('data', function(chunk) {
+    expect(chunk).to.equal(file);
+  });
+
+  stream.on('end', function() {
+    expect(file.contents.toString()).to.contain("virtualdom.h('div");
+    done();
+  });
+
+  stream.write(file);
+  stream.end();
+}
+
 describe('gulp-jsx', function() {
   it('returns passthrough stream', function() {
     var stream = jsx();
@@ -11,28 +37,10 @@ describe('gulp-jsx', function() {
   });
 
   it('transforms js files in stream', function(done) {
-    var stream = jsx({
-      jsx: "virtualdom.h",
-      ignoreDocblock: true
-    });
+    performTransformTest("some.js", done);
+  });
 
-    var file = new File({
-      cwd: "",
-      base: "",
-      path: "some.js",
-      contents: new Buffer("<div></div>", 'utf8')
-    });
-
-    stream.on('data', function(chunk) {
-      expect(chunk).to.equal(file);
-    });
-
-    stream.on('end', function() {
-      expect(file.contents.toString()).to.contain("virtualdom.h('div");
-      done();
-    });
-
-    stream.write(file);
-    stream.end();
+  it('works with .jsx files', function(done) {
+    performTransformTest("some.jsx", done);
   });
 });
