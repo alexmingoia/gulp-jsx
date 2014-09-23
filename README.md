@@ -26,4 +26,13 @@ gulp.task('build', function() {
 });
 ```
 
+## Options
+
+### options.match
+
+Type: `RegExp` or `String`
+Default: `/jsx?$/i`
+
+Only parses files with pathnames that match this value.
+
 ## BSD Licensed
