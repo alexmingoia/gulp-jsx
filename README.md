@@ -1,8 +1,4 @@
-# gulp-jsx
-
-[![Build Status](https://secure.travis-ci.org/alexmingoia/gulp-jsx.png)](http://travis-ci.org/alexmingoia/gulp-jsx) 
-[![NPM version](https://badge.fury.io/js/gulp-jsx.png)](http://badge.fury.io/js/gulp-jsx)
-[![Dependency Status](https://david-dm.org/alexmingoia/gulp-jsx.png)](http://david-dm.org/alexmingoia/gulp-jsx)
+# gulp-jsx [![Build Status](http://img.shields.io/travis/alexmingoia/gulp-jsx.svg?style=flat)](http://travis-ci.org/alexmingoia/gulp-jsx) [![NPM version](http://img.shields.io/npm/v/gulp-jsx.svg?style=flat)](https://npmjs.org/package/gulp-jsx) [![Dependency Status](http://img.shields.io/david/alexmingoia/gulp-jsx.svg?style=flat)](http://david-dm.org/alexmingoia/gulp-jsx)
 
 [jsx-transform](https://github.com/alexmingoia/jsx-transform/) for
 [Gulp](https://github.com/gulpjs/gulp/).
@@ -26,7 +22,13 @@ gulp.task('build', function() {
 });
 ```
 
+See [jsx-transform](https://github.com/alexmingoia/jsx-transform) for options
+and other usage information.
+
 ## Options
+
+Options are passed to
+[jsx-transform](https://github.com/alexmingoia/jsx-transform).
 
 ### options.match
 
