@@ -1,6 +1,6 @@
 {
   "name": "gulp-jsx",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Transpile JSX in gulp streams.",
   "main": "index.js",
   "scripts": {
