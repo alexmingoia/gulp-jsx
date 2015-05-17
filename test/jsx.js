@@ -4,8 +4,7 @@ var jsx = require('..');
 
 function performTransformTest(filename, done) {
   var stream = jsx({
-    jsx: "virtualdom.h",
-    ignoreDocblock: true
+    factory: "virtualdom.h"
   });
 
   var file = new File({
