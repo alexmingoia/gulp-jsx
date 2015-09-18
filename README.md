@@ -17,7 +17,9 @@ var jsx = require('gulp-jsx');
 
 gulp.task('build', function() {
   return gulp.src('views/**/*.js')
-    .pipe(jsx())
+    .pipe(jsx({
+      factory: 'React.createClass'
+    }))
     .pipe(gulp.dest('dist'));
 });
 ```
