@@ -16,7 +16,7 @@
     "gulp"
   ],
   "author": "Alex Mingoia <talk@alexmingoia.com>",
-  "license": "BSD",
+  "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/alexmingoia/gulp-jsx/issues"
   },
